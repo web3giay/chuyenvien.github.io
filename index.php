@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="vi" prefix="og: https://ogp.me/ns#">
+<head>
+  
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Hướng dẫn ruttienthetindung</title>
+	<style>
+	    .noidung img {
+            width: 100%;
+        }
+	</style>
+	<style type="text/css">
+.fone {
+    font-size: 22px;
+    color: #f00;
+    line-height: 40px;
+    font-weight: bold;
+    padding-left: 45px;
+    margin: 0 0;
+}
+.fix_tel { position:fixed; bottom:15px; right:0; z-index:999;}
+.fix_tel a {text-decoration: none; display:block;}
+.tel { background: #eee;width:205px; height:40px; position:relative; overflow:hidden;background-size:40px;border-radius:28px;border:solid 1px #ccc;}
+.ring-alo-phone {
+    background-color: transparent;
+    cursor: pointer;
+    height: 80px;
+    position: absolute;
+    transition: visibility 0.5s ease 0s;
+    visibility: hidden;
+    width: 80px;
+    z-index: 200000 !important;
+}
+.ring-alo-phone.ring-alo-show {
+    visibility: visible;
+}
+.ring-alo-phone.ring-alo-hover, .ring-alo-phone:hover {
+    opacity: 1;
+}
+.ring-alo-ph-circle {
+    animation: 1.2s ease-in-out 0s normal none infinite running ring-alo-circle-anim;
+    background-color: transparent;
+    border: 2px solid rgba(30, 30, 30, 0.4);
+    border-radius: 100%;
+    height: 70px;
+    left: 10px;
+    opacity: 0.1;
+    position: absolute;
+    top: 12px;
+    transform-origin: 50% 50% 0;
+    transition: all 0.5s ease 0s;
+    width: 70px;
+}
+.ring-alo-phone.ring-alo-active .ring-alo-ph-circle {
+    animation: 1.1s ease-in-out 0s normal none infinite running ring-alo-circle-anim !important;
+}
+.ring-alo-phone.ring-alo-static .ring-alo-ph-circle {
+    animation: 2.2s ease-in-out 0s normal none infinite running ring-alo-circle-anim !important;
+}
+.ring-alo-phone.ring-alo-hover .ring-alo-ph-circle, .ring-alo-phone:hover .ring-alo-ph-circle {
+    border-color: #f00;
+    opacity: 0.5;
+}
+.ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle, .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle {
+    border-color: #baf5a7;
+    opacity: 0.5;
+}
+.ring-alo-phone.ring-alo-green .ring-alo-ph-circle {
+    border-color: #f00;
+    opacity: 0.5;
+}
+.ring-alo-ph-circle-fill {
+    animation: 2.3s ease-in-out 0s normal none infinite running ring-alo-circle-fill-anim;
+    background-color: #000;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    height: 30px;
+    left: 30px;
+    opacity: 0.1;
+    position: absolute;
+    top: 33px;
+    transform-origin: 50% 50% 0;
+    transition: all 0.5s ease 0s;
+    width: 30px;
+}
+.ring-alo-phone.ring-alo-hover .ring-alo-ph-circle-fill, .ring-alo-phone:hover .ring-alo-ph-circle-fill {
+    background-color: rgba(0, 175, 242, 0.5);
+    opacity: 0.75 !important;
+}
+.ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-circle-fill, .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-circle-fill {
+    background-color: rgba(117, 235, 80, 0.5);
+    opacity: 0.75 !important;
+}
+.ring-alo-phone.ring-alo-green .ring-alo-ph-circle-fill {
+    background-color: rgba(0, 175, 242, 0.5);
+    opacity: 0.75 !important;
+}
+
+.ring-alo-ph-img-circle {
+    animation: 1s ease-in-out 0s normal none infinite running ring-alo-circle-img-anim;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    height: 30px;
+    left: 30px;		    
+    opacity: 1;
+    position: absolute;
+    top: 33px;
+    transform-origin: 50% 50% 0;
+    width: 30px;
+}
+#logo img {
+    animation: 1s ease-in-out 0s normal none infinite running ring-alo-circle-img-anim;
+   
+}
+.ring-alo-phone.ring-alo-hover .ring-alo-ph-img-circle, .ring-alo-phone:hover .ring-alo-ph-img-circle {
+    background-color: #f00;
+}
+.ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-img-circle, .ring-alo-phone.ring-alo-green:hover .ring-alo-ph-img-circle {
+    background-color: #75eb50;
+}
+.ring-alo-phone.ring-alo-green .ring-alo-ph-img-circle {
+    background-color: #f00;
+}
+@keyframes ring-alo-circle-anim {
+	0% {
+	    opacity: 0.1;
+	    transform: rotate(0deg) scale(0.5) skew(1deg);
+	}
+	30% {
+	    opacity: 0.5;
+	    transform: rotate(0deg) scale(0.7) skew(1deg);
+	}
+	100% {
+	    opacity: 0.6;
+	    transform: rotate(0deg) scale(1) skew(1deg);
+	}
+}
+
+@keyframes ring-alo-circle-img-anim {
+	0% {
+	    transform: rotate(0deg) scale(1) skew(1deg);
+	}
+	10% {
+	    transform: rotate(-25deg) scale(1) skew(1deg);
+	}
+	20% {
+	    transform: rotate(25deg) scale(1) skew(1deg);
+	}
+	30% {
+	    transform: rotate(-25deg) scale(1) skew(1deg);
+	}
+	40% {
+	    transform: rotate(25deg) scale(1) skew(1deg);
+	}
+	50% {
+	    transform: rotate(0deg) scale(1) skew(1deg);
+	}
+	100% {
+	    transform: rotate(0deg) scale(1) skew(1deg);
+	}
+}
+@keyframes ring-alo-circle-fill-anim {
+	0% {
+	    opacity: 0.2;
+	    transform: rotate(0deg) scale(0.7) skew(1deg);
+	}
+	50% {
+	    opacity: 0.2;
+	    transform: rotate(0deg) scale(1) skew(1deg);
+	}
+	100% {
+	    opacity: 0.2;
+	    transform: rotate(0deg) scale(0.7) skew(1deg);
+	}
+	}
+	.ring-alo-ph-img-circle a img {
+	    padding: 1px 0 0 1px;
+	    width: 30px;
+	    position: relative;
+	    top: -1px;
+	}
+}
+.ring-alo-phone.ring-alo-green .ring-alo-ph-img-circle {
+    background-color: #f00;
+}
+
+.ring-alo-phone.ring-alo-green .ring-alo-ph-circle {
+    background-color: #f00;
+}
+
+.ring-alo-phone.ring-alo-green .ring-alo-ph-circle {
+    border-color: #f00;
+}
+
+.ring-alo-phone.ring-alo-green.ring-alo-hover .ring-alo-ph-img-circle,
+.ring-alo-phone.ring-alo-green:hover .ring-alo-ph-img-circle {
+    background-color: #baf5a7;
+}
+
+.fone {
+    color: #f00;
+}
+
+.tel {
+    background-color: #eee;
+}
+
+.fix_tel {
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    bottom: 15px;
+    left: 5px;
+}
+
+
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.nutne {
+    animation: zoominoutsinglefeatured 1s infinite ;
+}
+	    </style>
+	    <style>
+	.nutzalo {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 18px;
+    z-index: 1000;
+    width: 138px;
+    background: radial-gradient(#5dff3b, transparent);
+    border-radius: 45px;
+}
+a.nutzalo img {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+   
+    <div class="noidung">
+        <h1 style="text-align:center">Chào mừng bạn đến với Chuyên Viên ĐỨC</h1>
+        
+        <div class="chuaanh">
+            <a href="tel:0336587222">
+            <img src="https://ruttiennhanhphire.com/1x2.jpg"></a>
+        </div>
+        <p style="font-size:23px; text-align:center"><b>Hướng dẫn tra cứu bảng giá ở thời điểm hiện tại</b></p>
+          <div class="chuaanh">
+            <img src="https://ruttiennhanhphire.com/gia.jpg">
+        </div>
+        <p style="font-size:23px; text-align:center"><b>Hướng dẫn quý khách tại  nhà bằng hình thức đơn giản</b></p>
+        <div class="chuaanh">
+            <img src="https://ruttiennhanhphire.com/2x.jpg">
+        </div>
+        <p style="font-size:23px; text-align:center"><b>Chúng tôi có dịch vụ tối ưu nhất về chi phí cũng như chất lượng</b></p>
+        <div class="chuaanh">
+            <img src="https://ruttiennhanhphire.com/3x2.jpg">
+            <img src="https://ruttiennhanhphire.com/4x2.jpg">
+            <img src="https://ruttiennhanhphire.com/5x2.jpg">
+        </div>
+        <p style="font-size:23px; text-align:center"><b>Một giải pháp hữu hiệu lúc bạn gặp khó khăn</b></p>
+        <div class="chuaanh">
+            <img src="https://ruttiennhanhphire.com/save3.jpg">
+        </div>
+        
+        
+        
+    </div>
+    <div class="fix_tel">
+  <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon" style="right: 150px; bottom: -12px;">
+    <div class="ring-alo-ph-circle"></div>
+    <div class="ring-alo-ph-circle-fill"></div>
+    <div class="ring-alo-ph-img-circle">
+
+      <a href="tel:0336587222">
+        <img class="lazy" src="https://ruttiennhanhphire.com/phone-ring.png" alt="phone">
+        
+        </a>
+    </div>
+  </div>
+  <div class="tel">
+      <p class="fone">0336587222</p>
+  </div>
+</div>
+    <a class="nutzalo" href="https://zalo.me/0336587222" target="_blank">
+ <img alt="nút zalo" class="zalo" src="https://ruttiennhanhphire.com/zalo.png">
+</a>
+</body>
+</html>
